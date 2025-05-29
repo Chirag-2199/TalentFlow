@@ -1,79 +1,104 @@
-<h1 align="center"> TalentFlow - MERN Stack Web-Application </h1>
+# TalentFlow 🚀 – Freelance Job Platform
 
-## Technologies 🔧
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  
+![Node.js](https://img.shields.io/badge/Node.js-18-blue.svg)  
+![React](https://img.shields.io/badge/React-18.2-blue.svg)  
+![MongoDB](https://img.shields.io/badge/MongoDB-6.5-green.svg)
 
-- HTML, CSS, Javascript
-- React
-- NodeJs
-- Express
-- MongoDB
-- Styled Components
-- MUI
-- JWT Auth
-- Twilio
-- And much more 🎒
+**TalentFlow** is a powerful freelance job platform where **freelancers** and **employers** connect. Freelancers can create profiles, browse and apply for jobs, while employers can post job listings and manage applications. Built with **MERN stack**, it features JWT authentication, protected dashboards, and a clean, responsive UI.
 
-## Screenshots 📸
+---
 
-![TalentFlow Homepage)](https://imgur.com/irBJEk5.png)
+## 🔥 Features
 
-![TalentFlow FindJobs)](https://imgur.com/wd9htRN.png)
+- 🎯 Post and apply for freelance jobs
+- 👤 Role-based dashboards (Freelancer/Employer)
+- 🔒 Secure JWT-based authentication
+- 🎨 Modern React UI with Tailwind & responsive design
+- 🌐 RESTful API with Express.js
+- 📦 MongoDB-powered persistent storage
 
-![TalentFlow FJ)](https://imgur.com/XaJ4vDu.png)
+---
 
-## Code Example/Issues 🔍
+## 🛠 Tech Stack
 
-If you have any issues, please let me know in the issues section or directly to sunkabhanu281202@gmail.com
+| Category     | Tools Used                              |
+|--------------|------------------------------------------|
+| Frontend     | React, JavaScript, Tailwind CSS, Material UI |
+| Backend      | Node.js, Express.js, JWT                 |
+| Database     | MongoDB, Mongoose                        |
+| Auth         | JWT, bcrypt                              |
+| Dev Tools    | Git, GitHub, dotenv, nodemon             |
 
-## Installation 💾
+---
 
-```bash
-git clone https://github.com/Bhanu1776/TalentFlow.git
-```
+## ⚙️ Installation
 
-Create config.env file in `backend` folder and Fill your `.env` variables:
-
-```env
-PORT=
-DATABASE=
-SECRET_KEY=
-```
-
-Install deps:
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/Chirag-2199/TalentFlow.git
+cd TalentFlow
+
+cd backend
 npm install
-```
 
-Run React server from `Client` folder :
 
-```bash
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
+
+npm run dev
+
+
+cd ../frontend
+npm install
+
+REACT_APP_API_URL=http://localhost:5000/api
+
 npm start
-```
 
-Simultaneously Run Node.js Server :
+TalentFlow/
+│
+├── backend/
+│   ├── controllers/        # Business logic (auth, jobs, users)
+│   │   ├── authController.js
+│   │   ├── jobController.js
+│   │   └── userController.js
+│   ├── models/             # Mongoose models
+│   │   ├── User.js
+│   │   └── Job.js
+│   ├── routes/             # API endpoints
+│   │   ├── authRoutes.js
+│   │   ├── jobRoutes.js
+│   │   └── userRoutes.js
+│   ├── middleware/         # JWT & error handling
+│   │   ├── authMiddleware.js
+│   │   └── errorHandler.js
+│   ├── config/             # DB config
+│   │   └── db.js
+│   ├── .env
+│   └── server.js           # Entry point
+│
+├── frontend/
+│   ├── components/         # Reusable UI components
+│   │   ├── Navbar.jsx
+│   │   ├── JobCard.jsx
+│   │   └── Footer.jsx
+│   ├── pages/              # React pages
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── Dashboard.jsx
+│   │   └── JobDetails.jsx
+│   ├── assets/             # Images, icons, etc.
+│   ├── App.js              # Main component
+│   ├── index.js            # Entry point
+│   └── .env
+│
+├── .gitignore
+├── README.md
+└── package.json
 
-```bash
-node server.js
-```
 
-## Contributing
 
-This is an open source project, and contributions of any kind are welcome and appreciated. Open issues, bugs, and feature requests are all listed on the [issues](https://github.com/Bhanu1776/Freelansters/issues) tab and labeled accordingly. Feel free to open bug tickets and make feature requests.
-
-## Contributors 💣
-
-<a href="https://github.com/Bhanu1776/Freelansters/graphs/contributors">
-  <img  src="https://contrib.rocks/image?repo=Bhanu1776/Freelansters" />
-</a>
-
-## Support Me 🫂
-
-<a href="https://www.buymeacoffee.com/Bhanu1776"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200" /></a>
-
-<hr>
-
-© 2022 Bhanu Sunka and contributors\
-This project is licensed under the [**MIT license**](https://github.com/Bhanu1776/Freelancers-Hub/blob/master/LICENSE).
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
